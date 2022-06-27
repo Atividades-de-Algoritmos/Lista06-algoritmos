@@ -1,42 +1,48 @@
 #
-# autores:
+# Autores:
 # Michel Silva
+# Carlos Eduardo
 #
 # data: 27/06/2022
 #
 # 1.	Em linguagem Python, elabore um menu em loop.
 #
-#
 
-# menu
-opcao = True # variavel de controle do loop do menu do programa (True = continua)
+# Menu com laço de repetição While
 
-while opcao:  ## Loop While que continuará até opcao = False
-  print("1- opção 1")
-  print("2- opção 2")
-  print("3- opção 3")
-  print("4- opção 4")
-  print("5- opção sair")
-  menu = int(input("entre a opção de [1-5]: ")) # recebe a opção do menu do usuario e converte para inteiro (int)
+Menu = True # Variável de controle do loop do menu do programa (True = continua)
 
-  if menu == 1: # opção 1 do menu (1)
-    print("Menu 1 foi selecionado")
-    ## Você pode adicionar seu código ou funções aqui
-  elif menu == 2: # opção 2 do menu (2)
-    print("Menu 2 foi selecionado")
-    ## Você pode adicionar seu código ou funções aqui
-  elif menu == 3: # opção 3 do menu (3)
-    print("Menu 3 foi selecionado")
-    ## YVocê pode adicionar seu código ou funções aqui
-  elif menu == 4: # opção 4 do menu (4)
-    print("Menu 4 foi selecionado")
-    ## Você pode adicionar seu código ou funções aqui
-  elif menu == 5: # opção 5 do menu (5)
-    print("Menu 5 foi selecionado")
-    ## Você pode adicionar seu código ou funções aqui
-    opcao = False  # Isso fará com que o loop while termine, já que o valor do loop não é definido como False
-  else:
-    # Quaisquer entradas inteiras diferentes dos valores 1-5, imprimimos uma mensagem de erro
-    print("Seleção de opção errada. Digite qualquer chave para tentar novamente ..")
+while Menu: # Loop While que continuará até opcao = False
+  print("1 - Menu 1")
+  print("2 - Menu 2")
+  print("3 - Menu 3")
+  print("4 - Menu 4")
+  print("5 - Sair do loop")
+  
+  opcao = int(input("\nEntre a opção de [1-5]: ")) # Solicita a escolha do usuario e converte para inteiro (int)
 
-print("Fim do programa")
+  if opcao == 1: # Se opção recebida for igual a 1.
+    print("\nMenu 1 foi selecionado\n") #"\n" é usado para quebrar uma linha, parecido com a tecla enter do teclado.
+    # Você pode adicionar seu código ou funções aqui
+  
+  elif opcao == 2: # Se a opção recebida for igual a 2.
+    print("\nMenu 2 foi selecionado\n")
+    # Você pode adicionar seu código ou funções aqui
+  
+  elif opcao == 3: # Se a opção recebida for igual a 3.
+    print("\nMenu 3 foi selecionado\n")
+    # Você pode adicionar seu código ou funções aqui
+  
+  elif opcao == 4: # Se a opção recebida for igual a 4.
+    print("\nMenu 4 foi selecionado\n")
+    # Você pode adicionar seu código ou funções aqui
+  
+  elif opcao == 5: # Se a opção recebida for igual a 5.
+    print("\nMenu 5 foi selecionado\n")
+    # Você pode adicionar seu código ou funções aqui
+    Menu = False  # Isso fará com que o loop while termine recebendo a váriavel menu como False.
+  
+  else: # Quaisquer entradas inteiras diferentes dos valores 1-5, imprimimos uma mensagem de erro
+    print("\nSeleção de opção errada. Digite qualquer chave para tentar novamente ..\n")
+
+print("fim do programa") # Informando para o usuário que o programa terminou
