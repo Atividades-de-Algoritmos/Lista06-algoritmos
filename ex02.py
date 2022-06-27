@@ -3,7 +3,7 @@
 # autores:
 # Michel Silva
 #
-# data: 26/06/2022
+# data: 27/06/2022
 #
 # 2.	Em linguagem Python, faça um programa que sorteia um valor entre 1 e 10 e solicite ao usuário
 # que adivinhe esse número sorteado.
